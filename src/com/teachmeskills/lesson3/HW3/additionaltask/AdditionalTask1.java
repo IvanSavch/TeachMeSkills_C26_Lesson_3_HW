@@ -6,15 +6,15 @@ public class AdditionalTask1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int fibonachiNumber = scanner.nextInt();
-        long sum = 1;
-        int counter = 2;
-        while (counter <= fibonachiNumber) {
-            if (fibonachiNumber > 100) {
-                break;
-            }
-            sum = sum * counter;
-            System.out.println(sum);
-            counter++;
+        int numberOne = 1;
+        int numberTwo = 1;
+        int fibanachi;
+        while (fibonachiNumber < 100) {
+            fibanachi = numberOne + numberTwo;
+            System.out.println(fibanachi);
+            numberOne = numberTwo;
+            numberTwo = fibanachi;
+            fibonachiNumber++;
         }
     }
 }
