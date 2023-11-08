@@ -10,7 +10,8 @@ public class AdditionalTask2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String figure;
-        while (true) {
+        boolean isTrue = true;
+        while (isTrue) {
             figure = scanner.nextLine();
             switch (figure) {
                 case "triangle":
@@ -40,6 +41,9 @@ public class AdditionalTask2 {
                     int radius = scanner.nextInt();
                     double squareOfTheCircle = Math.PI * Math.pow(radius, 2);
                     System.out.println("square of yhe circle = " + squareOfTheCircle);
+                    break;
+                case "e" :
+                    isTrue = false;
                     break;
                 default:
                     System.out.println("Wrong input");
