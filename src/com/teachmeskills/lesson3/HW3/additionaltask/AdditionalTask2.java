@@ -4,6 +4,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class AdditionalTask2 {
+    /*
+    Не могу понять почему он кидает на default?
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String figure;
